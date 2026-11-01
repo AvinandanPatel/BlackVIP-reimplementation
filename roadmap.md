@@ -150,6 +150,8 @@ Each stage upsamples ×2 with a depthwise `ConvTranspose2d(k=2, s=2)` followed b
 
 ## Phase 4 — Zeroth-order optimizers
 
+> 📘 The detailed step-by-step build guide is in [roadmap_phase4_zoo.md](roadmap_phase4_zoo.md).
+
 Implement them as standalone classes that only take a `loss_fn(w) -> scalar` closure. That keeps them testable without CLIP.
 
 ### 4.1 Perturbation distributions
